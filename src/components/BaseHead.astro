@@ -52,4 +52,25 @@ https://rsms.me/inter/
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
 <!---- Alpine  -->
-<script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>]
+
+<!-- EMP WIDGET -->
+ 
+<script type="text/JavaScript">
+  ((function(){
+  var loadWidget = function(){
+  var script = "https://widget-service-dev.emplorium.io/acc-2cad1/init.js"
+  var x = document.createElement('script');
+  var sx = document.getElementsByTagName('script')[0];
+  x.src = script; x.async = true;
+  sx.parentNode.insertBefore(x,sx)
+  }
+  if(document.readyState==="complete"){
+  loadWidget();
+  } else if (window.addEventListener){
+  window.addEventListener('load',loadWidget,false)
+  } else if (window.attachEvent) {
+  window.attachEvent("onload",loadWidget)
+  }
+  })())
+  </script>
